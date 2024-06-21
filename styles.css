@@ -1,0 +1,146 @@
+html {
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  width: 100vw;
+  text-align: center;
+  /* overflow-x: hidden; */
+  overflow-y: auto;
+}
+
+.squib-table {
+  width: 75vw;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* #welcome-table {
+} */
+
+#welcome-header {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  font-size: xxx-large;
+  color: black;
+  -webkit-text-stroke: 2px white; /* Add text stroke */
+  text-shadow: 1px 1px 2px white; /* Optional: add a text shadow for better visibility */
+  animation: marquee 7s linear infinite;
+}
+
+#welcome-body {
+  border: solid white;
+  width: 75vw;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+#welcome-text-main {
+  font-size: xx-large;
+  padding: 1rem;
+}
+
+#welcome-hr {
+  width: 50vw;
+}
+
+.welcome-text {
+  font-size: x-large;
+  padding: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  line-height: 2rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-50vw); /* Start from left at 25vw */
+  }
+  50% {
+    transform: translateX(75vw); /* Move to disappear at 75vw */
+  }
+  100% {
+    transform: translateX(-50vw);
+  }
+}
+
+#gif-container {
+  margin-top: 10rem;
+}
+
+#created-at {
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  left: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+hr {
+  width: 75vw;
+  margin-top: 1rem;
+}
+
+#home-button {
+  background: none;
+  color: white;
+  border: none;
+  margin-top: 1rem;
+}
+
+#home-button:hover {
+  color: aquamarine;
+}
+
+.nav-button {
+  padding: 0.5rem;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: large;
+  background-color: #444; /* Add background color to buttons */
+  border: none; /* Remove borders */
+  display: inline-block; /* Make sure buttons are inline-block */
+}
+
+.nav-button:hover {
+  color: aquamarine;
+}
+
+.nav-button:hover {
+  color: aquamarine;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: white; /* Ensure normal and visited links are white */
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: aquamarine; /* Change color on hover and active */
+}
+
+#squib-icon {
+  vertical-align: inherit;
+}
+
+.index-gif {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
