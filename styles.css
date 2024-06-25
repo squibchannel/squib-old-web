@@ -7,8 +7,18 @@ body {
   color: white;
   width: 100vw;
   text-align: center;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   overflow-y: auto;
+  background-image: url(Resources/Images/randomocybervapor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  min-height: 100vh;
+}
+
+#created-at {
+  text-shadow: 0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #0ff,
+    /* Neon Blue */ 0 0 80px #0ff, 0 0 100px #0ff;
 }
 
 .squib-table {
@@ -24,34 +34,85 @@ body {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   font-size: xxx-large;
-  color: black;
-  -webkit-text-stroke: 2px white; /* Add text stroke */
-  text-shadow: 1px 1px 2px white; /* Optional: add a text shadow for better visibility */
-  animation: marquee 7s linear infinite;
+  /* color: black;
+  -webkit-text-stroke: 2px white;
+  text-shadow: 1px 1px 2px white; */
+  background-position: center;
+  color: #0ff; /* Neon Pink */
+  text-shadow: 0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #0ff,
+    /* Neon Blue */ 0 0 80px #0ff, 0 0 100px #0ff;
+  animation: combinedEffect 4s linear infinite;
+}
+
+@keyframes combinedEffect {
+  0% {
+    text-shadow: 0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #0ff,
+      0 0 80px #0ff, 0 0 100px #0ff;
+    transform: translateX(-50vw);
+  }
+  25% {
+    text-shadow: 0 0 10px #f0f, 0 0 20px #f0f, 0 0 30px #f0f, 0 0 50px #0ff,
+      0 0 100px #0ff, 0 0 150px #0ff;
+    transform: translateX(0vw);
+  }
+  50% {
+    text-shadow: 0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #0ff,
+      0 0 80px #0ff, 0 0 100px #0ff;
+    transform: translateX(50vw);
+  }
+  75% {
+    text-shadow: 0 0 10px #f0f, 0 0 20px #f0f, 0 0 30px #f0f, 0 0 50px #0ff,
+      0 0 100px #0ff, 0 0 150px #0ff;
+    transform: translateX(75vw);
+  }
+  100% {
+    text-shadow: 0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #0ff,
+      0 0 80px #0ff, 0 0 100px #0ff;
+    transform: translateX(100vw);
+  }
 }
 
 #welcome-body {
-  border: solid white;
-  width: 75vw;
+  /* border: solid white; */
+  width: 50vw;
   margin: auto;
   margin-top: 2rem;
 }
 
 #welcome-text-main {
+  background: #0ff2;
+  border-radius: 25px;
+  width: fit-content;
+  margin: auto;
   font-size: xx-large;
   padding: 1rem;
+  color: #0ff;
+  text-shadow: 0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #0ff,
+    /* Neon Blue */ 0 0 80px #0ff, 0 0 100px #0ff;
 }
 
-#welcome-hr {
-  width: 50vw;
+#welcome-text-container {
+  margin-top: 5rem;
+  background-image: url(Resources/Images/retrowave_transparent_banner_image.png) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 3rem 3rem 3rem;
+  background-size: cover;
+}
+
+.welcome-flair-box {
+  background: #0ff2;
+  border-radius: 25px;
+  max-width: 50vw;
 }
 
 .welcome-text {
-  font-size: x-large;
-  padding: 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
   line-height: 2rem;
+  text-shadow: 0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #0ff,
+    /* Neon Blue */ 0 0 80px #0ff, 0 0 100px #0ff;
+  padding: 16px;
+  font-size: xx-large;
+  line-height: 4rem;
 }
 
 @keyframes marquee {
@@ -87,48 +148,55 @@ hr {
   margin-top: 1rem;
 }
 
+/* Home button styling */
 #home-button {
   background: none;
-  color: white;
   border: none;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-#home-button:hover {
-  color: aquamarine;
-}
-
+/* Navigation button styling */
 .nav-button {
   padding: 0.5rem;
-  font-family: monospace;
-  font-weight: bolder;
-  font-size: large;
-  background-color: #444; /* Add background color to buttons */
-  border: none; /* Remove borders */
-  display: inline-block; /* Make sure buttons are inline-block */
+  font-family: inherit; /* Keep original font */
+  font-weight: bold;
+  font-size: 18px; /* Slightly larger font size */
+  background-color: #ff00ff; /* Magenta neon background */
+  border: 2px solid #ff00ff; /* Magenta neon border */
+  border-radius: 5px; /* Rounded corners */
+  margin-right: 10px; /* Add some space between buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 0 10px #ff00ff; /* Neon glow effect */
 }
 
 .nav-button:hover {
-  color: aquamarine;
+  background-color: #0ff; /* Bright green background on hover */
+  color: #000000; /* Black text on hover */
+  box-shadow: 0 0 20px #0ff; /* Increased glow on hover */
 }
 
-.nav-button:hover {
-  color: aquamarine;
+.home-nav-link {
+  text-decoration: none;
+  color: white;
 }
 
+.home-nav-link:hover {
+  color: #0ff;
+}
+
+/* Navigation link styling */
 .nav-link {
   text-decoration: none;
   color: black;
-}
-
-.nav-link:link,
-.nav-link:visited {
-  color: white; /* Ensure normal and visited links are white */
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .nav-link:hover,
 .nav-link:active {
-  color: aquamarine; /* Change color on hover and active */
+  color: #ff00ff; /* Magenta neon color on hover and active */
 }
 
 #squib-icon {

@@ -8,7 +8,6 @@
   </head>
 
   <body>
-    <hr />
     <table class="squib-table" id="main-table">
       <tr class="nav-row">
         <td class="nav-cell">
@@ -23,7 +22,9 @@
         </td>
         <td class="nav-cell">
           <button id="home-button">
-            <h1><a class="nav-link" href="index.html">squib_channel</a></h1>
+            <h1>
+              <a class="home-nav-link" href="index.html">squib_channel</a>
+            </h1>
           </button>
           <img
             id="squib-icon"
@@ -46,24 +47,31 @@
     <hr />
 
     <table class="squib-table" id="welcome-table">
-      <th id="welcome-header">Welcome!</th>
+      <span><th id="welcome-header">Hi, I'm Squib :)</th></span>
     </table>
     <div id="welcome-body">
-      <p id="welcome-text-main">Hi, I'm Squib :)</p>
-      <hr id="welcome-hr" />
-      <p class="welcome-text">
-        I'm a web dev and geek who plays video games on
-        <a href="https://www.twitch.tv/squib_channel" target="_blank">Twitch</a
-        >. I'm so glad you found this site! I was inspired from the many
-        websites indexed on
-        <a href="https://wiby.me/" target="_blank">wiby.me</a>
-      </p>
-      <p class="welcome-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iure
-        inventore asperiores aut, placeat omnis eius alias doloremque eos odit
-        veritatis impedit magnam quas eaque natus. Nihil tempore quisquam
-        perspiciatis!
-      </p>
+      <!-- <p id="welcome-text-main">Hi, I'm Squib :)</p> -->
+
+      <div id="welcome-text-container">
+        <div class="welcome-flair-box">
+          <p class="welcome-text">
+            I'm a web dev and geek who plays video games on
+            <a href="https://www.twitch.tv/squib_channel" target="_blank"
+              >Twitch</a
+            >. I'm so glad you found this site! I was inspired from the many
+            websites indexed on
+            <a href="https://wiby.me/" target="_blank">wiby.me</a>
+          </p>
+        </div>
+        <!-- <div class="welcome-flair-box">
+          <p class="welcome-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iure
+            inventore asperiores aut, placeat omnis eius alias doloremque eos
+            odit veritatis impedit magnam quas eaque natus. Nihil tempore
+            quisquam perspiciatis!
+          </p>
+        </div> -->
+      </div>
     </div>
     <div id="created-at">First Created: June 21, 2024</div>
     <div id="gif-container">
