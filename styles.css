@@ -1,5 +1,6 @@
 html {
   margin: 0;
+  font-family: "Press Start 2P", cursive;
 }
 
 body {
@@ -74,7 +75,7 @@ body {
 
 #welcome-body {
   /* border: solid white; */
-  width: 50vw;
+  width: 75vw;
   margin: auto;
   margin-top: 2rem;
 }
@@ -92,18 +93,20 @@ body {
 }
 
 #welcome-text-container {
-  margin-top: 5rem;
+  margin-top: 3rem;
   background-image: url(Resources/Images/retrowave_transparent_banner_image.png) !important;
   background-position: center;
   background-repeat: no-repeat;
   padding: 3rem 3rem 3rem 3rem;
-  background-size: cover;
+  background-size: 125vw;
+  background-repeat: repeat-y;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #f50057;
 }
 
 .welcome-flair-box {
   background: #0ff2;
   border-radius: 25px;
-  max-width: 50vw;
+  max-width: 75vw;
 }
 
 .welcome-text {
@@ -128,7 +131,7 @@ body {
 }
 
 #gif-container {
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 #created-at {
@@ -206,4 +209,78 @@ hr {
 .index-gif {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+#about-body {
+  padding: 1rem;
+  width: 50vw;
+  border: solid white;
+  margin: auto;
+  margin-top: 3rem;
+  overflow-x: none;
+  overflow-y: scroll;
+  max-height: 60vmin;
+  font-size: xx-large;
+  background: linear-gradient(to bottom right, #1e1e1e, #4e4a45);
+}
+
+#about-body {
+  padding: 100px;
+  width: 75vw !important;
+  margin: auto;
+  background: linear-gradient(
+      to bottom right,
+      rgba(30, 30, 30, 0.8),
+      rgba(78, 74, 69, 0.8)
+    ),
+    url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  line-height: 1.6;
+  display: inline-block;
+}
+
+.welcome-flair-box-about {
+  margin: auto;
+  display: inline-block;
+}
+
+.about-hr {
+  margin-top: 3rem;
+  max-width: 60vw;
+}
+
+.self-tag {
+  display: inline-block;
+  color: yellow;
+}
+
+.self-tag-story {
+  color: yellow;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000;
+  display: inline-block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.self-tag-story:hover {
+  transform: translateX(20px) translateY(-20px) translateZ(-50px) scale(1.4);
+  color: #0ff;
+}
+
+.self-tag-link {
+  text-decoration: none;
+  color: yellow;
+}
+
+.self-tag-link:hover {
+  text-decoration: none;
+  color: red;
 }
